@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Justice Law Firm</title>
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
+
+<!-- Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-DtYTFQWU.js"></script>
+  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-DK8QQVGm.css">
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header class="site-header">
+    <div class="container">
+        <div class="site-header__inner">
+            <!-- Logo -->
+            <a href="./" class="site-header__logo">
+                <img src="./assets/img/logo-justice.svg" alt="Justice Law Firm" class="site-header__logo-img" />
+            </a>
+
+            <!-- Mobile menu toggle -->
+            <input type="checkbox" class="site-header__menu-toggle" id="menu-toggle" hidden />
+            <label for="menu-toggle" class="site-header__menu-btn">
+                <i class="fa-solid fa-bars"></i>
+                <span class="sr-only">Toggle menu</span>
+            </label>
+
+            <!-- Main navigation -->
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item site-nav__item--active">
+                        <a href="./" class="site-nav__link" aria-current="page">
+                            Home
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./about.html" class="site-nav__link">
+                            About
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--has-dropdown">
+                        <a href="./practice.html" class="site-nav__link" aria-expanded="false">
+                            Practice Areas
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                        <ul class="site-nav__dropdown" role="menu">
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Divorce
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Personal Injury
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Employment
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Immigration
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Family
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Property
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./attorneys.html" class="site-nav__link">
+                            Attorneys
+                        </a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--has-dropdown">
+                        <a href="#!" class="site-nav__link" aria-expanded="false">
+                            Page
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                        <ul class="site-nav__dropdown" role="menu">
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./blog.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Blog
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./contact.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Contact
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="#!" class="site-nav__dropdown-link" role="menuitem">
+                                    FAQ
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./404.html" class="site-nav__dropdown-link" role="menuitem">
+                                    404
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./comming.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Coming Soon
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Contact CTA -->
+            <div class="site-header__contact">
+                <span class="site-header__contact-label">Call</span>
+                <a href="tel:+1234567890" class="site-header__contact-phone">(000) 123 456 789</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="site-main" role="main">
+            <!-- Contact Section -->
+            <section class="contact-page-section" aria-labelledby="contact-heading">
+                <div class="container">
+                    <div class="contact-page-section__content">
+                        <div class="row row-cols-2 row-cols-lg-1 gy-lg-4">
+                            <!-- Contact Form Column -->
+                            <div class="contact-page-section__form-column">
+                                <header class="contact-page-section__header">
+                                    <h1 id="contact-heading" class="contact-page-section__heading">
+                                        Contact Us
+                                    </h1>
+                                    <p class="contact-page-section__description">
+                                        Feel free to contact us and we will get Back to
+                                        you as soon as we can.
+                                    </p>
+                                </header>
+
+                                <!-- Contact Form -->
+                                <form class="contact-form" action="/contact" method="POST">
+                                    <div class="contact-form__field">
+                                        <label for="contact-name" class="contact-form__label">NAME</label>
+                                        <input type="text" id="contact-name" name="name" class="contact-form__input"
+                                            required aria-describedby="name-error" />
+                                        <span id="name-error" class="contact-form__error" role="alert"></span>
+                                    </div>
+
+                                    <div class="contact-form__field">
+                                        <label for="contact-email" class="contact-form__label">email address</label>
+                                        <input type="email" id="contact-email" name="email" class="contact-form__input"
+                                            required aria-describedby="email-error" />
+                                        <span id="email-error" class="contact-form__error" role="alert"></span>
+                                    </div>
+
+                                    <div class="contact-form__field">
+                                        <label for="contact-message" class="contact-form__label">Message</label>
+                                        <textarea id="contact-message" name="message" class="contact-form__textarea"
+                                            rows="6" required aria-describedby="message-error"></textarea>
+                                        <span id="message-error" class="contact-form__error" role="alert"></span>
+                                    </div>
+
+                                    <div class="contact-form__submit">
+                                        <button type="submit" class="contact-form__submit-btn">
+                                            send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Contact Info Column -->
+                            <div class="contact-page-section__info-column">
+                                <div class="contact-info-card">
+                                    <!-- Opening Hours -->
+                                    <div class="contact-info-card__section">
+                                        <h3 class="contact-info-card__heading">opening hours</h3>
+                                        <div class="contact-info-card__content">
+                                            <p class="contact-info-card__text">
+                                                Monday - Friday<br>
+                                                9am - 5pm
+                                            </p>
+                                            <p class="contact-info-card__text">
+                                                Weekend<br>
+                                                Closed
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Address -->
+                                    <div class="contact-info-card__section">
+                                        <h3 class="contact-info-card__heading">address</h3>
+                                        <div class="contact-info-card__content">
+                                            <address class="contact-info-card__address">
+                                                50 Harrison Street, PH Suite 445<br>
+                                                Hoboken, NJ 07030<br>
+                                                United States
+                                            </address>
+                                        </div>
+                                    </div>
+
+                                    <!-- Contact Details -->
+                                    <div class="contact-info-card__section">
+                                        <h3 class="contact-info-card__heading">Contact</h3>
+                                        <div class="contact-info-card__content">
+                                            <a href="mailto:yourlawfirm22@gmail.com" class="contact-info-card__email">
+                                                yourlawfirm22@gmail.com
+                                            </a>
+                                            <a href="tel:+10001234567" class="contact-info-card__phone">
+                                                (000) 123-4567
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Social Media -->
+                                    <div class="contact-info-card__section">
+                                        <div class="contact-info-card__social">
+                                            <nav class="social-media-nav" aria-label="Social media links">
+                                                <a href="#!" class="social-media-nav__link"
+                                                    aria-label="Follow us on Facebook">
+                                                    <img src="./assets/icon/facebook.svg" alt=""
+                                                        class="social-media-nav__icon" />
+                                                </a>
+                                                <a href="#!" class="social-media-nav__link"
+                                                    aria-label="Follow us on Twitter">
+                                                    <img src="./assets/icon/twitter.svg" alt=""
+                                                        class="social-media-nav__icon" />
+                                                </a>
+                                                <a href="#!" class="social-media-nav__link"
+                                                    aria-label="Connect with us on LinkedIn">
+                                                    <img src="./assets/icon/linkedin.svg" alt=""
+                                                        class="social-media-nav__icon" />
+                                                </a>
+                                                <a href="#!" class="social-media-nav__link"
+                                                    aria-label="Follow us on Instagram">
+                                                    <img src="./assets/icon/instagram.svg" alt=""
+                                                        class="social-media-nav__icon" />
+                                                </a>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Site Footer -->
+        <!-- ================= Site Footer ================= -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <!-- Footer main content -->
+        <div class="site-footer__main">
+            <div class="row">
+                <!-- Legal links column -->
+                <div class="col-2 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Justice</h3>
+                    <nav class="site-footer__nav" aria-label="Legal links">
+                        <ul class="site-footer__nav-list">
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Privacy Policy</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Terms & Conditions</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Cookie Preferences</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Main pages column -->
+                <div class="col-2 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Pages</h3>
+                    <nav class="site-footer__nav" aria-label="Main pages">
+                        <ul class="site-footer__nav-list">
+                            <li class="site-footer__nav-item">
+                                <a href="../index.html" class="site-footer__nav-link">Home</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../about.html" class="site-footer__nav-link">About</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../practice.html" class="site-footer__nav-link">Practice Areas</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../attorneys.html" class="site-footer__nav-link">Attorneys</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Contact information column -->
+                <div class="col-3 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Contact</h3>
+                    <div class="site-footer__contact">
+                        <address class="site-footer__contact-address">
+                            50 Harrison Street, PH Suite 445<br>
+                            Hoboken, NJ 07030
+                        </address>
+                        <a href="tel:+10001234567" class="site-footer__contact-phone"
+                            aria-label="Call us at (000) 123-4567">
+                            (000) 123-4567
+                        </a>
+                        <a href="mailto:yourlawfirm22@gmail.com" class="site-footer__contact-email"
+                            aria-label="Email us">
+                            yourlawfirm22@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map column -->
+                <div class="col-5 col-xl-12 col-md-6 col-sm-12 gy-3">
+                    <div class="site-footer__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3588.9028857533976!2d105.99452097113168!3d10.235665190566937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1751299979336!5m2!1svi!2s"
+                            width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Justice Law Firm Location"
+                            aria-label="Google Maps showing Justice Law Firm location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer bottom section -->
+        <div class="site-footer__bottom">
+            <!-- Logo -->
+            <a href="/" class="site-footer__logo" aria-label="Justice Law Firm - Go to homepage">
+                <img src="./assets/img/logo-justice.svg" alt="Justice Law Firm" class="site-footer__logo-img" />
+            </a>
+
+            <!-- Bottom row with copyright and socials -->
+            <div class="site-footer__bottom-content">
+                <p class="site-footer__copyright">
+                    Copyright © 2022 UI HUT All Rights Reserved
+                </p>
+
+                <!-- Social media links -->
+                <div class="site-footer__social">
+                    <nav class="site-footer__social-nav" aria-label="Social media links">
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Facebook">
+                            <img src="./assets/icon/facebook.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Connect with us on LinkedIn">
+                            <img src="./assets/icon/linkedin.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Twitter">
+                            <img src="./assets/icon/twitter.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Instagram">
+                            <img src="./assets/icon/instagram.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

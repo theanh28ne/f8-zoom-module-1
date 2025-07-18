@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Justice Law Firm</title>
+
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
+
+<!-- Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-DtYTFQWU.js"></script>
+  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-DK8QQVGm.css">
+</head>
+
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="site-header__inner">
+            <!-- Logo -->
+            <a href="./" class="site-header__logo">
+                <img src="./assets/img/logo-justice.svg" alt="Justice Law Firm" class="site-header__logo-img" />
+            </a>
+
+            <!-- Mobile menu toggle -->
+            <input type="checkbox" class="site-header__menu-toggle" id="menu-toggle" hidden />
+            <label for="menu-toggle" class="site-header__menu-btn">
+                <i class="fa-solid fa-bars"></i>
+                <span class="sr-only">Toggle menu</span>
+            </label>
+
+            <!-- Main navigation -->
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item site-nav__item--active">
+                        <a href="./" class="site-nav__link" aria-current="page">
+                            Home
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./about.html" class="site-nav__link">
+                            About
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--has-dropdown">
+                        <a href="./practice.html" class="site-nav__link" aria-expanded="false">
+                            Practice Areas
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                        <ul class="site-nav__dropdown" role="menu">
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Divorce
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Personal Injury
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Employment
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Immigration
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Family
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Property
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./attorneys.html" class="site-nav__link">
+                            Attorneys
+                        </a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--has-dropdown">
+                        <a href="#!" class="site-nav__link" aria-expanded="false">
+                            Page
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                        <ul class="site-nav__dropdown" role="menu">
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./blog.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Blog
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./contact.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Contact
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="#!" class="site-nav__dropdown-link" role="menuitem">
+                                    FAQ
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./404.html" class="site-nav__dropdown-link" role="menuitem">
+                                    404
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./comming.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Coming Soon
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Contact CTA -->
+            <div class="site-header__contact">
+                <span class="site-header__contact-label">Call</span>
+                <a href="tel:+1234567890" class="site-header__contact-phone">(000) 123 456 789</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="site-main" role="main">
+            <!-- Page Title Section -->
+            <section class="page-title-section">
+                <div class="container">
+                    <div class="page-title-section__content">
+                        <h1 class="page-title-section__heading">About Us</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Corelaw Section -->
+            <section class="about-corelaw-section" aria-labelledby="about-corelaw-heading">
+                <div class="container">
+                    <div class="row row-cols-2 row-cols-md-1 gy-lg-3">
+                        <div class="about-corelaw-section__text-content">
+                            <h2 id="about-corelaw-heading" class="about-corelaw-section__heading">
+                                About Corelaw
+                            </h2>
+                            <p class="about-corelaw-section__description">
+                                In consequat tincidunt turpis sit amet imperdiet. Praesent
+                                Class officelan nonatoureanor mauris laoreet, iaculis libero
+                                quis.Curabitur et tempus eri consequat tincidunt turpis sit
+                                amet imperdiet. Praesent nonatourean olei aptent taciti
+                                sociosqu ad litora torquent per.
+                            </p>
+                            <div class="about-corelaw-section__cta">
+                                <a href="/services" class="about-corelaw-section__button">More Details</a>
+                            </div>
+                        </div>
+                        <div class="about-corelaw-section__media">
+                            <div class="about-corelaw-section__image-wrapper">
+                                <img src="./assets/img/img-about-corelaw.png"
+                                    alt="Professional lawyer in office setting" class="about-corelaw-section__image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section class="statistics-section" aria-labelledby="statistics-heading">
+                <div class="container">
+                    <h2 id="statistics-heading" class="sr-only">Company Statistics</h2>
+                    <div class="statistics-section__content">
+                        <div class="row row-cols-4 row-cols-lg-2 row-cols-md-1 gy-3">
+                            <div class="statistics-section__item">
+                                <div class="statistic-card">
+                                    <span class="statistic-card__number" data-val="150">150</span>
+                                    <span class="statistic-card__label">Expert Attorneys</span>
+                                </div>
+                            </div>
+                            <div class="statistics-section__item">
+                                <div class="statistic-card">
+                                    <span class="statistic-card__number" data-val="250">250</span>
+                                    <span class="statistic-card__label">Happy Clients</span>
+                                </div>
+                            </div>
+                            <div class="statistics-section__item">
+                                <div class="statistic-card">
+                                    <span class="statistic-card__number" data-val="50">50</span>
+                                    <span class="statistic-card__label">Cases Completed</span>
+                                </div>
+                            </div>
+                            <div class="statistics-section__item">
+                                <div class="statistic-card">
+                                    <span class="statistic-card__number" data-val="28">28</span>
+                                    <span class="statistic-card__label">Cases Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Best Experience Section -->
+            <section class="experience-section" aria-labelledby="experience-heading">
+                <div class="container">
+                    <div class="row row-cols-2 row-cols-md-1 gy-3">
+                        <div class="experience-section__media">
+                            <div class="experience-section__image-wrapper">
+                                <img src="./assets/img/about-best-experiences.png"
+                                    alt="Lawyer providing consultation services" class="experience-section__image" />
+                            </div>
+                        </div>
+                        <div class="experience-section__text-content">
+                            <p class="experience-section__subtitle">Best Experience</p>
+                            <h2 id="experience-heading" class="experience-section__heading">
+                                Find Us What We Actually Do For Giving Complete Solutions.
+                            </h2>
+                            <p class="experience-section__description">
+                                In consequat tincidunt turpis sit amet imperdiet. Praesent
+                                ouiertdion nonatourei mauris laoreet, iaculis libero
+                                quis.Curabitur et tempusoni eros Class offi aptent taciti
+                                sociosqu ad litora torquent per.
+                            </p>
+                            <div class="experience-section__cta">
+                                <a href="/services" class="experience-section__button">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section" aria-labelledby="contact-heading">
+                <div class="container">
+                    <div class="contact-section__content">
+                        <header class="contact-section__header">
+                            <p class="contact-section__subtitle">Contact us</p>
+                            <h2 id="contact-heading" class="contact-section__heading">
+                                We Are Always Ready To Hear For You.
+                            </h2>
+                            <p class="contact-section__description">
+                                The right move at the right time saves your investment. Live the
+                                dream of expanding your business.
+                            </p>
+                        </header>
+
+                        <form class="contact-section__form" action="/contact" method="POST">
+                            <div class="contact-form">
+                                <div class="contact-form__row">
+                                    <div class="contact-form__field">
+                                        <label for="contact-name" class="sr-only">Your name</label>
+                                        <input type="text" id="contact-name" name="name" placeholder="Enter your name"
+                                            class="contact-form__input" required />
+                                    </div>
+                                    <div class="contact-form__field">
+                                        <label for="contact-company" class="sr-only">Company (optional)</label>
+                                        <input type="text" id="contact-company" name="company"
+                                            placeholder="Company (optional)" class="contact-form__input" />
+                                    </div>
+                                </div>
+                                <div class="contact-form__row">
+                                    <div class="contact-form__field">
+                                        <label for="contact-email" class="sr-only">Your email</label>
+                                        <input type="email" id="contact-email" name="email" placeholder="Your email"
+                                            class="contact-form__input" required />
+                                    </div>
+                                    <div class="contact-form__field">
+                                        <label for="contact-phone" class="sr-only">Phone number</label>
+                                        <input type="tel" id="contact-phone" name="phone" placeholder="Phone number"
+                                            class="contact-form__input" />
+                                    </div>
+                                </div>
+                                <div class="contact-form__field contact-form__field--full">
+                                    <label for="contact-message" class="sr-only">Tell us about yourself</label>
+                                    <textarea id="contact-message" name="message" placeholder="Tell us about yourself"
+                                        class="contact-form__textarea" rows="5"></textarea>
+                                </div>
+
+                                <div class="contact-form__footer">
+                                    <button type="submit" class="contact-form__submit-btn">
+                                        Contact us
+                                    </button>
+                                    <p class="contact-form__disclaimer">
+                                        By clicking contact us button, you agree our terms and policy.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Attorneys Section -->
+            <section class="attorneys-section" aria-labelledby="attorneys-heading">
+                <div class="container">
+                    <header class="attorneys-section__header">
+                        <p class="attorneys-section__subtitle">Our Attorneys</p>
+                        <h2 id="attorneys-heading" class="attorneys-section__heading">
+                            Find Our Intellectual Lawyer For You.
+                        </h2>
+                    </header>
+
+                    <div class="attorneys-section__grid">
+                        <div class="row row-cols-3 row-cols-lg-2 row-cols-sm-1 gx-xl-2 g-md-2">
+                            <article class="attorney-card">
+                                <div class="attorney-card__content">
+                                    <a href="/attorneys/henry-jack" class="attorney-card__image-link">
+                                        <img src="./assets/img/img-about-attorneys-01.png"
+                                            alt="Portrait of Henry Jack, Family Lawyer" class="attorney-card__image" />
+                                    </a>
+                                    <div class="attorney-card__info">
+                                        <h3 class="attorney-card__name">
+                                            <a href="/attorneys/henry-jack">Henry Jack</a>
+                                        </h3>
+                                        <span class="attorney-card__position">Family Lawyer</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="attorney-card">
+                                <div class="attorney-card__content">
+                                    <a href="/attorneys/sebastian-bol" class="attorney-card__image-link">
+                                        <img src="./assets/img/img-about-attorneys-02.png"
+                                            alt="Portrait of Sebastian Bol, Family Lawyer"
+                                            class="attorney-card__image" />
+                                    </a>
+                                    <div class="attorney-card__info">
+                                        <h3 class="attorney-card__name">
+                                            <a href="/attorneys/sebastian-bol">Sebistain Bol</a>
+                                        </h3>
+                                        <span class="attorney-card__position">Family Lawyer</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="attorney-card">
+                                <div class="attorney-card__content">
+                                    <a href="/attorneys/joseph-david" class="attorney-card__image-link">
+                                        <img src="./assets/img/img-about-attorneys-03.png"
+                                            alt="Portrait of Joseph David, Family Lawyer"
+                                            class="attorney-card__image" />
+                                    </a>
+                                    <div class="attorney-card__info">
+                                        <h3 class="attorney-card__name">
+                                            <a href="/attorneys/joseph-david">Josepy David</a>
+                                        </h3>
+                                        <span class="attorney-card__position">Family Lawyer</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ================= Site Footer ================= -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <!-- Footer main content -->
+        <div class="site-footer__main">
+            <div class="row">
+                <!-- Legal links column -->
+                <div class="col-2 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Justice</h3>
+                    <nav class="site-footer__nav" aria-label="Legal links">
+                        <ul class="site-footer__nav-list">
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Privacy Policy</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Terms & Conditions</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Cookie Preferences</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Main pages column -->
+                <div class="col-2 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Pages</h3>
+                    <nav class="site-footer__nav" aria-label="Main pages">
+                        <ul class="site-footer__nav-list">
+                            <li class="site-footer__nav-item">
+                                <a href="../index.html" class="site-footer__nav-link">Home</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../about.html" class="site-footer__nav-link">About</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../practice.html" class="site-footer__nav-link">Practice Areas</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../attorneys.html" class="site-footer__nav-link">Attorneys</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Contact information column -->
+                <div class="col-3 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Contact</h3>
+                    <div class="site-footer__contact">
+                        <address class="site-footer__contact-address">
+                            50 Harrison Street, PH Suite 445<br>
+                            Hoboken, NJ 07030
+                        </address>
+                        <a href="tel:+10001234567" class="site-footer__contact-phone"
+                            aria-label="Call us at (000) 123-4567">
+                            (000) 123-4567
+                        </a>
+                        <a href="mailto:yourlawfirm22@gmail.com" class="site-footer__contact-email"
+                            aria-label="Email us">
+                            yourlawfirm22@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map column -->
+                <div class="col-5 col-xl-12 col-md-6 col-sm-12 gy-3">
+                    <div class="site-footer__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3588.9028857533976!2d105.99452097113168!3d10.235665190566937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1751299979336!5m2!1svi!2s"
+                            width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Justice Law Firm Location"
+                            aria-label="Google Maps showing Justice Law Firm location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer bottom section -->
+        <div class="site-footer__bottom">
+            <!-- Logo -->
+            <a href="/" class="site-footer__logo" aria-label="Justice Law Firm - Go to homepage">
+                <img src="./assets/img/logo-justice.svg" alt="Justice Law Firm" class="site-footer__logo-img" />
+            </a>
+
+            <!-- Bottom row with copyright and socials -->
+            <div class="site-footer__bottom-content">
+                <p class="site-footer__copyright">
+                    Copyright © 2022 UI HUT All Rights Reserved
+                </p>
+
+                <!-- Social media links -->
+                <div class="site-footer__social">
+                    <nav class="site-footer__social-nav" aria-label="Social media links">
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Facebook">
+                            <img src="./assets/icon/facebook.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Connect with us on LinkedIn">
+                            <img src="./assets/icon/linkedin.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Twitter">
+                            <img src="./assets/icon/twitter.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Instagram">
+                            <img src="./assets/icon/instagram.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

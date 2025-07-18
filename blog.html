@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Latest Stories | Justice Law Firm</title>
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
+
+<!-- Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-DtYTFQWU.js"></script>
+  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-DK8QQVGm.css">
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header class="site-header">
+    <div class="container">
+        <div class="site-header__inner">
+            <!-- Logo -->
+            <a href="./" class="site-header__logo">
+                <img src="./assets/img/logo-justice.svg" alt="Justice Law Firm" class="site-header__logo-img" />
+            </a>
+
+            <!-- Mobile menu toggle -->
+            <input type="checkbox" class="site-header__menu-toggle" id="menu-toggle" hidden />
+            <label for="menu-toggle" class="site-header__menu-btn">
+                <i class="fa-solid fa-bars"></i>
+                <span class="sr-only">Toggle menu</span>
+            </label>
+
+            <!-- Main navigation -->
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item site-nav__item--active">
+                        <a href="./" class="site-nav__link" aria-current="page">
+                            Home
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./about.html" class="site-nav__link">
+                            About
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--has-dropdown">
+                        <a href="./practice.html" class="site-nav__link" aria-expanded="false">
+                            Practice Areas
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                        <ul class="site-nav__dropdown" role="menu">
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Divorce
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Personal Injury
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Employment
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Immigration
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Family
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./practice.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Property
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./attorneys.html" class="site-nav__link">
+                            Attorneys
+                        </a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--has-dropdown">
+                        <a href="#!" class="site-nav__link" aria-expanded="false">
+                            Page
+                            <i class="site-nav__arrow" aria-hidden="true">
+                                <img src="./assets/icon/arrow-down.svg" alt="" />
+                            </i>
+                        </a>
+                        <ul class="site-nav__dropdown" role="menu">
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./blog.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Blog
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./contact.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Contact
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="#!" class="site-nav__dropdown-link" role="menuitem">
+                                    FAQ
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./404.html" class="site-nav__dropdown-link" role="menuitem">
+                                    404
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="site-nav__dropdown-item" role="none">
+                                <a href="./comming.html" class="site-nav__dropdown-link" role="menuitem">
+                                    Coming Soon
+                                    <i class="site-nav__dropdown-arrow" aria-hidden="true">
+                                        <img src="./assets/icon/arrow-down.svg" alt="" />
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Contact CTA -->
+            <div class="site-header__contact">
+                <span class="site-header__contact-label">Call</span>
+                <a href="tel:+1234567890" class="site-header__contact-phone">(000) 123 456 789</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="site-main" role="main">
+            <!-- Blog Section -->
+            <section class="blog-section" aria-labelledby="blog-heading">
+                <div class="container">
+                    <!-- Blog Header -->
+                    <header class="blog-section__header">
+                        <h1 id="blog-heading" class="blog-section__heading">
+                            Latest Story From My Blog
+                        </h1>
+                        <p class="blog-section__description">
+                            Welcome to Marc Jacobs We Want our monthly
+                            roundup of new releases and undisputed favorites.
+                        </p>
+                    </header>
+
+                    <!-- Blog Posts Grid -->
+                    <div class="blog-section__content">
+                        <div class="blog-posts-grid">
+                            <div class="row row-cols-3 row-cols-lg-2 row-cols-md-1 g-3 g-xl-2">
+                                <!-- Blog Post 1 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-01.png"
+                                                alt="Design inspiration workspace with colorful elements"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 2 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-2" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-02.png"
+                                                alt="Creative workspace with laptop and design tools"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-2">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-2" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 3 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-3" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-03.png"
+                                                alt="Modern workspace setup with multiple screens"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-3">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-3" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 4 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-4" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-04.png"
+                                                alt="Collaborative design session with team members"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-4">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-4" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 5 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-5" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-05.png"
+                                                alt="Creative brainstorming session with sticky notes"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-5">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-5" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 6 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-6" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-06.png"
+                                                alt="Designer sketching wireframes on paper"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-6">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-6" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 7 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-7" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-07.png"
+                                                alt="Digital tablet with design software interface"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-7">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-7" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 8 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-8" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-08.png"
+                                                alt="Team collaboration on design project" class="blog-post-card__image"
+                                                loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-8">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-8" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Blog Post 9 -->
+                                <div class="blog-posts-grid__item">
+                                    <article class="blog-post-card">
+                                        <a href="/blog/design-inspiration-9" class="blog-post-card__image-link">
+                                            <img src="./assets/img/img-blog-story-09.png"
+                                                alt="Laptop showing design portfolio and creative work"
+                                                class="blog-post-card__image" loading="lazy" />
+                                        </a>
+                                        <div class="blog-post-card__content">
+                                            <div class="blog-post-card__meta">
+                                                <img src="./assets/icon/calendar.svg" alt=""
+                                                    class="blog-post-card__meta-icon" aria-hidden="true" />
+                                                <time class="blog-post-card__meta-date" datetime="2021-02-21">
+                                                    Feb 21 2021
+                                                </time>
+                                            </div>
+                                            <h3 class="blog-post-card__title">
+                                                <a href="/blog/design-inspiration-9">Design Inspiration</a>
+                                            </h3>
+                                            <p class="blog-post-card__excerpt">
+                                                Welcome to Marc Jacobs We Want our
+                                                monthly roundup of new releases and
+                                                undisputed favorites.
+                                            </p>
+                                            <a href="/blog/design-inspiration-9" class="blog-post-card__read-more">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Actions -->
+                        <div class="blog-section__actions">
+                            <a href="/blog/all" class="blog-section__view-all-btn">
+                                Read All
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Site Footer -->
+        <!-- ================= Site Footer ================= -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <!-- Footer main content -->
+        <div class="site-footer__main">
+            <div class="row">
+                <!-- Legal links column -->
+                <div class="col-2 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Justice</h3>
+                    <nav class="site-footer__nav" aria-label="Legal links">
+                        <ul class="site-footer__nav-list">
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Privacy Policy</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Terms & Conditions</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="#!" class="site-footer__nav-link">Cookie Preferences</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Main pages column -->
+                <div class="col-2 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Pages</h3>
+                    <nav class="site-footer__nav" aria-label="Main pages">
+                        <ul class="site-footer__nav-list">
+                            <li class="site-footer__nav-item">
+                                <a href="../index.html" class="site-footer__nav-link">Home</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../about.html" class="site-footer__nav-link">About</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../practice.html" class="site-footer__nav-link">Practice Areas</a>
+                            </li>
+                            <li class="site-footer__nav-item">
+                                <a href="../attorneys.html" class="site-footer__nav-link">Attorneys</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Contact information column -->
+                <div class="col-3 col-xl-4 col-md-6 col-sm-12 gy-3">
+                    <h3 class="site-footer__heading">Contact</h3>
+                    <div class="site-footer__contact">
+                        <address class="site-footer__contact-address">
+                            50 Harrison Street, PH Suite 445<br>
+                            Hoboken, NJ 07030
+                        </address>
+                        <a href="tel:+10001234567" class="site-footer__contact-phone"
+                            aria-label="Call us at (000) 123-4567">
+                            (000) 123-4567
+                        </a>
+                        <a href="mailto:yourlawfirm22@gmail.com" class="site-footer__contact-email"
+                            aria-label="Email us">
+                            yourlawfirm22@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map column -->
+                <div class="col-5 col-xl-12 col-md-6 col-sm-12 gy-3">
+                    <div class="site-footer__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3588.9028857533976!2d105.99452097113168!3d10.235665190566937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1751299979336!5m2!1svi!2s"
+                            width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Justice Law Firm Location"
+                            aria-label="Google Maps showing Justice Law Firm location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer bottom section -->
+        <div class="site-footer__bottom">
+            <!-- Logo -->
+            <a href="/" class="site-footer__logo" aria-label="Justice Law Firm - Go to homepage">
+                <img src="./assets/img/logo-justice.svg" alt="Justice Law Firm" class="site-footer__logo-img" />
+            </a>
+
+            <!-- Bottom row with copyright and socials -->
+            <div class="site-footer__bottom-content">
+                <p class="site-footer__copyright">
+                    Copyright © 2022 UI HUT All Rights Reserved
+                </p>
+
+                <!-- Social media links -->
+                <div class="site-footer__social">
+                    <nav class="site-footer__social-nav" aria-label="Social media links">
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Facebook">
+                            <img src="./assets/icon/facebook.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Connect with us on LinkedIn">
+                            <img src="./assets/icon/linkedin.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Twitter">
+                            <img src="./assets/icon/twitter.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="#!" class="site-footer__social-link" aria-label="Follow us on Instagram">
+                            <img src="./assets/icon/instagram.svg" alt="" class="site-footer__social-icon" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+            <script>
+                window.addEventListener("load", function () {
+                    document.body.classList.add("is-loaded");
+                });
+            </script>
+</body>
+
+</html>
