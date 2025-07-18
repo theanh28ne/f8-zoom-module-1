@@ -1,0 +1,822 @@
+@use "../mixins";
+
+// Page Title Section
+
+.page-title-section {
+    padding: 80px 0 40px;
+    background: #f8ebc9;
+    text-align: center;
+
+    @include mixins.screen(md) {
+        padding: 60px 0 30px;
+    }
+
+    &__content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--color-primary, #2c5530);
+
+        @include mixins.screen(lg) {
+            font-size: 4rem;
+        }
+
+        @include mixins.screen(md) {
+            font-size: 3rem;
+        }
+    }
+}
+
+// About Corelaw Section
+
+.about-corelaw-section {
+    padding: 150px 0 75px;
+
+    @include mixins.screen(lg) {
+        padding: 100px 0 50px;
+    }
+
+    @include mixins.screen(md) {
+        padding: 50px 0 25px;
+    }
+
+    &__text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 50px;
+
+        @include mixins.screen(lg) {
+            padding-right: 20px;
+        }
+
+        @include mixins.screen(md) {
+            padding-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__heading {
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1.25;
+        color: var(--color-primary, #2c5530);
+
+        @include mixins.screen(lg) {
+            font-size: 4rem;
+        }
+
+        @include mixins.screen(md) {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+    }
+
+    &__description {
+        width: 480px;
+        max-width: 100%;
+        margin: 20px 0 30px;
+        font-size: 1.8rem;
+        line-height: 1.75;
+        color: #586863;
+
+        @include mixins.screen(md) {
+            margin: 10px 0 20px;
+            font-size: 1.6rem;
+            line-height: 1.75;
+        }
+    }
+
+    &__cta {
+        margin-top: 10px;
+    }
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        padding: 15px 30px;
+        background: var(--color-secondary, #e74c3c);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.6rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background: var(--color-secondary-dark, #c0392b);
+            transform: translateY(-2px);
+        }
+
+        &:focus {
+            outline: 2px solid var(--color-secondary, #e74c3c);
+            outline-offset: 2px;
+        }
+
+        @include mixins.screen(md) {
+            padding: 12px 24px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__media {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 560px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: -15px;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #f8ebc9;
+
+            @include mixins.screen(lg) {
+                top: 10px;
+                right: 0;
+            }
+
+            @include mixins.screen(md) {
+                top: 15px;
+                right: -10px;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 700px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding-right: 15px;
+
+        @include mixins.screen(lg) {
+            height: 600px;
+        }
+
+        @include mixins.screen(md) {
+            height: 500px;
+            padding-right: 10px;
+        }
+    }
+}
+
+// Statistics Section
+
+.statistics-section {
+    margin: 75px 0;
+
+    @include mixins.screen(md) {
+        margin: 25px 0;
+    }
+
+    &__content {
+        padding: 70px 0;
+        border-radius: 30px;
+        background: var(--color-primary, #2c5530);
+
+        @include mixins.screen(md) {
+            padding: 40px 0;
+            border-radius: 20px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// Statistic Card Component
+.statistic-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: #fff;
+
+    &__number {
+        font-size: 6rem;
+        font-weight: 800;
+        font-family: var(--font-roboto-slab, serif);
+        line-height: 1.2;
+
+        @include mixins.screen(lg) {
+            font-size: 5rem;
+        }
+
+        @include mixins.screen(md) {
+            font-size: 4rem;
+        }
+    }
+
+    &__label {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.7;
+
+        @include mixins.screen(md) {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+// Experience Section
+
+.experience-section {
+    padding: 75px 0;
+
+    @include mixins.screen(lg) {
+        padding: 50px 0;
+    }
+
+    @include mixins.screen(md) {
+        padding: 25px 0;
+    }
+
+    &__media {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mixins.screen(md) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 550px;
+        height: 560px;
+
+        @include mixins.screen(lg) {
+            height: 500px;
+        }
+
+        @include mixins.screen(md) {
+            height: 400px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: -30px;
+            bottom: -30px;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            border-radius: 75px;
+            background: #fed464;
+
+            @include mixins.screen(md) {
+                right: -15px;
+                bottom: -15px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 70px;
+        object-fit: cover;
+
+        @include mixins.screen(md) {
+            border-radius: 50px;
+        }
+    }
+
+    &__text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+
+        @include mixins.screen(xl) {
+            padding-left: 50px;
+        }
+
+        @include mixins.screen(lg) {
+            padding-left: 20px;
+        }
+
+        @include mixins.screen(md) {
+            padding-left: 0;
+        }
+    }
+
+    &__subtitle {
+        color: var(--color-secondary, #e74c3c);
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+
+        @include mixins.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__heading {
+        margin-top: 6px;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1.25;
+        color: var(--color-primary, #2c5530);
+
+        @include mixins.screen(lg) {
+            font-size: 4rem;
+        }
+
+        @include mixins.screen(md) {
+            margin-top: 5px;
+            font-size: 3rem;
+            line-height: 1.3;
+        }
+    }
+
+    &__description {
+        margin: 20px 0 30px;
+        font-size: 1.8rem;
+        line-height: 1.75;
+        color: #586863;
+
+        @include mixins.screen(md) {
+            margin: 12px 0 16px;
+            font-size: 1.6rem;
+            line-height: 1.75;
+        }
+    }
+
+    &__cta {
+        margin-top: 10px;
+    }
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        padding: 15px 30px;
+        background: var(--color-secondary, #e74c3c);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.6rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background: var(--color-secondary-dark, #c0392b);
+            transform: translateY(-2px);
+        }
+
+        &:focus {
+            outline: 2px solid var(--color-secondary, #e74c3c);
+            outline-offset: 2px;
+        }
+
+        @include mixins.screen(md) {
+            padding: 12px 24px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+// Contact Section
+
+.contact-section {
+    padding: 75px 0;
+
+    @include mixins.screen(lg) {
+        padding: 50px 0;
+    }
+
+    @include mixins.screen(md) {
+        padding: 25px 0;
+    }
+
+    &__content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        max-width: 520px;
+        text-align: left;
+
+        @include mixins.screen(md) {
+            max-width: 100%;
+        }
+    }
+
+    &__subtitle {
+        color: var(--color-secondary, #e74c3c);
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+
+        @include mixins.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__heading {
+        margin-top: 12px;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1.25;
+        color: var(--color-primary, #2c5530);
+
+        @include mixins.screen(lg) {
+            font-size: 4rem;
+        }
+
+        @include mixins.screen(md) {
+            font-size: 3rem;
+            line-height: 1.3;
+        }
+    }
+
+    &__description {
+        margin-top: 20px;
+        font-size: 1.8rem;
+        line-height: 1.75;
+        color: #586863;
+
+        @include mixins.screen(md) {
+            font-size: 1.6rem;
+            line-height: 1.75;
+        }
+    }
+
+    &__form {
+        margin-top: 40px;
+
+        @include mixins.screen(md) {
+            margin-top: 30px;
+        }
+    }
+}
+
+// Contact Form Component
+.contact-form {
+    &__row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        @include mixins.screen(md) {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__field {
+        flex: 1;
+
+        &--full {
+            margin-bottom: 20px;
+
+            @include mixins.screen(md) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__input,
+    &__textarea {
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: var(--color-primary, #2c5530);
+        background: #fff;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-secondary, #e74c3c);
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+        }
+
+        &::placeholder {
+            color: #999;
+        }
+
+        @include mixins.screen(md) {
+            padding: 12px 16px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 40px;
+
+        @include mixins.screen(md) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            margin-top: 30px;
+        }
+    }
+
+    &__submit-btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 15px 30px;
+        background: var(--color-secondary, #e74c3c);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background: var(--color-secondary-dark, #c0392b);
+            transform: translateY(-2px);
+        }
+
+        &:focus {
+            outline: 2px solid var(--color-secondary, #e74c3c);
+            outline-offset: 2px;
+        }
+
+        @include mixins.screen(md) {
+            padding: 12px 24px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__disclaimer {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: #666;
+        margin: 0;
+
+        @include mixins.screen(md) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Attorneys Section
+
+.attorneys-section {
+    padding: 75px 0 150px;
+
+    @include mixins.screen(lg) {
+        padding: 50px 0 100px;
+    }
+
+    @include mixins.screen(md) {
+        padding: 25px 0 50px;
+    }
+
+    &__header {
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+
+        @include mixins.screen(md) {
+            max-width: 100%;
+        }
+    }
+
+    &__subtitle {
+        color: var(--color-secondary, #e74c3c);
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+
+        @include mixins.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__heading {
+        margin-top: 6px;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1.25;
+        color: var(--color-primary, #2c5530);
+
+        @include mixins.screen(lg) {
+            font-size: 4rem;
+        }
+
+        @include mixins.screen(md) {
+            font-size: 3rem;
+            line-height: 1.3;
+        }
+    }
+
+    &__grid {
+        margin-top: 70px;
+
+        @include mixins.screen(md) {
+            margin-top: 40px;
+        }
+    }
+}
+
+// Attorney Card Component
+.attorney-card {
+    height: 100%;
+
+    &__content {
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid #f9f6f6;
+        border-radius: 15px;
+        background: #fff;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            border-color: transparent;
+            box-shadow: 0px 18px 64px 0px rgba(14, 20, 18, 0.07);
+            transform: translateY(-5px);
+        }
+    }
+
+    &__image-link {
+        position: relative;
+        display: block;
+        padding-top: 95%;
+        overflow: hidden;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__info {
+        position: relative;
+        padding: 20px 20px 30px;
+        background: #fff;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+            width: 140%;
+            height: 165px;
+            background: #fff;
+            transform: skew(5deg, -5deg);
+            z-index: -1;
+
+            @include mixins.screen(lg) {
+                bottom: -40px;
+                height: 180px;
+            }
+
+            @include mixins.screen(sm) {
+                bottom: -20px;
+            }
+        }
+    }
+
+    &__name {
+        position: relative;
+        font-size: 2.4rem;
+        font-weight: 700;
+        font-family: var(--font-roboto-slab, serif);
+        line-height: 1.4;
+
+        @include mixins.screen(md) {
+            font-size: 2rem;
+        }
+
+        a {
+            color: var(--color-primary, #2c5530);
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover,
+            &:focus {
+                color: var(--color-secondary, #e74c3c);
+                outline: none;
+            }
+        }
+    }
+
+    &__position {
+        position: relative;
+        display: block;
+        margin-top: 6px;
+        color: #586863;
+        font-size: 1.6rem;
+        line-height: 1.75;
+
+        @include mixins.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+// Utility Classes
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+// Animation States
+
+.is-loaded {
+
+    .about-corelaw-section__button,
+    .experience-section__button,
+    .contact-form__submit-btn {
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .attorney-card__content {
+        transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .attorney-card__image {
+        transition: transform 0.3s ease;
+    }
+
+    .contact-form__input,
+    .contact-form__textarea {
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+}
+
+// Print Styles
+
+@media print {
+
+    .page-title-section,
+    .contact-section {
+        page-break-inside: avoid;
+    }
+
+    .about-corelaw-section__button,
+    .experience-section__button,
+    .contact-form__submit-btn {
+        display: none !important;
+    }
+
+    .statistics-section__content {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    .statistic-card {
+        color: #000 !important;
+    }
+}
