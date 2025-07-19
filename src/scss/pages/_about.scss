@@ -100,7 +100,7 @@
         display: inline-flex;
         align-items: center;
         padding: 15px 30px;
-        background: var(--color-secondary, #e74c3c);
+        background: #000;
         color: #fff;
         text-decoration: none;
         font-weight: 600;
@@ -326,7 +326,7 @@
     }
 
     &__subtitle {
-        color: var(--color-secondary, #e74c3c);
+        color: #000;
         font-size: 1.8rem;
         font-weight: 600;
         text-transform: uppercase;
@@ -376,7 +376,7 @@
         display: inline-flex;
         align-items: center;
         padding: 15px 30px;
-        background: var(--color-secondary, #e74c3c);
+        background: #000;
         color: #fff;
         text-decoration: none;
         font-weight: 600;
@@ -429,7 +429,7 @@
     }
 
     &__subtitle {
-        color: var(--color-secondary, #e74c3c);
+        color: #000;
         font-size: 1.8rem;
         font-weight: 600;
         text-transform: uppercase;
@@ -480,6 +480,8 @@
 
 // Contact Form Component
 .contact-form {
+    max-width: 800px !important;
+
     &__row {
         display: flex;
         gap: 20px;
@@ -555,7 +557,7 @@
         display: inline-flex;
         align-items: center;
         padding: 15px 30px;
-        background: var(--color-secondary, #e74c3c);
+        background: #000 !important;
         color: #fff;
         border: none;
         border-radius: 8px;
@@ -616,7 +618,7 @@
     }
 
     &__subtitle {
-        color: var(--color-secondary, #e74c3c);
+        color: #000;
         font-size: 1.8rem;
         font-weight: 600;
         text-transform: uppercase;
